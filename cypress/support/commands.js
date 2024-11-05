@@ -15,3 +15,8 @@ Cypress.Commands.add('answerQuestion', () => {
 Cypress.Commands.add('checkQuestionDisplayed', () => {
     cy.get('.question').should('be.visible'); // Update '.question' to match your selector
   });
+
+// Command to check for the final score
+Cypress.Commands.add('checkFinalScore', () => {
+    cy.contains('Your Score').should('be.visible'); // Update 'Your Score' if it differs in your app
+  });
