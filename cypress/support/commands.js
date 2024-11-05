@@ -20,3 +20,8 @@ Cypress.Commands.add('checkQuestionDisplayed', () => {
 Cypress.Commands.add('checkFinalScore', () => {
     cy.contains('Your Score').should('be.visible'); // Update 'Your Score' if it differs in your app
   });
+
+// Command to restart the quiz after completion
+Cypress.Commands.add('restartQuiz', () => {
+    cy.contains('Start New Quiz').click(); // Assumes 'Start New Quiz' button text exists
+  });
