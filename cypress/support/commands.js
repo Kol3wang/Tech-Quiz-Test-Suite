@@ -25,3 +25,6 @@ Cypress.Commands.add('checkFinalScore', () => {
 Cypress.Commands.add('restartQuiz', () => {
     cy.contains('Start New Quiz').click(); // Assumes 'Start New Quiz' button text exists
   });
+
+// Export to ensure commands are loaded
+export {};
