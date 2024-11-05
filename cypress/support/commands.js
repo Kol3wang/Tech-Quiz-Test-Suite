@@ -10,3 +10,8 @@ Cypress.Commands.add('startQuiz', () => {
 Cypress.Commands.add('answerQuestion', () => {
     cy.get('.answer-option').first().click(); // Update '.answer-option' to match your selector
   });
+
+// Command to check if a question is displayed
+Cypress.Commands.add('checkQuestionDisplayed', () => {
+    cy.get('.question').should('be.visible'); // Update '.question' to match your selector
+  });
