@@ -1,0 +1,4 @@
+[
+    { "question": "What is JavaScript?", "options": ["Language", "Library", "Framework", "Database"], "answer": "Language" },
+    { "question": "What is React?", "options": ["Library", "Framework", "Language", "Database"], "answer": "Library" }
+  ]
