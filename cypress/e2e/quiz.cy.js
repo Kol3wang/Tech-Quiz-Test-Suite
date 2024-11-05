@@ -37,6 +37,8 @@ describe('Tech Quiz End-to-End', () => {
       cy.get('.answer-option', { timeout: 10000 }).first().click();
       cy.wait(500);
     }
+    // Verify that the score is displayed at the end
+    cy.contains('Your Score', { timeout: 10000 }).should('be.visible');
 
     // Check for the "Start New Quiz" button and click it
     cy.contains('Start New Quiz', { timeout: 10000 }).should('be.visible').click();
