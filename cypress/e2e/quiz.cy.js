@@ -1,6 +1,6 @@
 describe('Tech Quiz End-to-End', () => {
     beforeEach(() => {
-      cy.visit('/');
+      cy.visit('http://localhost:3001');
     });
   
     it('should start the quiz when the Start button is clicked and display the first question', () => {
